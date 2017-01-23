@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HomeViewController.(setup() -&gt; ()).(closure #1):HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "swiftyJsonVar[&quot;feed&quot;][&quot;entry&quot;][&quot;category&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "JSONResponse.rawData()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

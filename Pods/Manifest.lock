@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Alamofire-Gloss (2.0.0):
+    - Alamofire-Gloss/Core (= 2.0.0)
+  - Alamofire-Gloss/Core (2.0.0):
+    - Alamofire (~> 4.0)
+    - Gloss (~> 1.0)
+  - BTNavigationDropdownMenu (0.4.1)
+  - Gloss (1.2.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire-Gloss
+  - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  BTNavigationDropdownMenu:
+    :branch: swift-3.0
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+CHECKOUT OPTIONS:
+  BTNavigationDropdownMenu:
+    :commit: 2c08c8579cf7a53ecb3dbf578e6e1034080a9859
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Alamofire-Gloss: dea192a13e23d323415e80e9b18d53915fd484bf
+  BTNavigationDropdownMenu: 093f3cbfad1572f2c222bdf8d17584d1e13380d4
+  Gloss: ec49584b2e8144e39810b6db6285433316e0c1c7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 0df9f6edfce34f175f39119ccd93231ddfc2085d
+
+COCOAPODS: 1.1.1
