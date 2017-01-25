@@ -7,11 +7,15 @@ PODS:
     - Gloss (~> 1.0)
   - BTNavigationDropdownMenu (0.4.1)
   - Gloss (1.2.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire-Gloss
   - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
+  - SDWebImage (~> 3.8)
   - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -29,8 +33,9 @@ SPEC CHECKSUMS:
   Alamofire-Gloss: dea192a13e23d323415e80e9b18d53915fd484bf
   BTNavigationDropdownMenu: 093f3cbfad1572f2c222bdf8d17584d1e13380d4
   Gloss: ec49584b2e8144e39810b6db6285433316e0c1c7
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 0df9f6edfce34f175f39119ccd93231ddfc2085d
+PODFILE CHECKSUM: bd14d093148e974501c45c6824a15ddd8115add0
 
 COCOAPODS: 1.1.1

@@ -7,6 +7,10 @@
 //
 
 import UIKit
+struct ImageToDisplay {
+    
+    var imageName: String
+}
 
 class BaseController: UIViewController {
         

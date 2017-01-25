@@ -9,6 +9,7 @@ use_frameworks!
     pod 'SwiftyJSON'
     pod 'Alamofire-Gloss'
     pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
+    pod 'SDWebImage', '~>3.8'
 end
 
 post_install do |installer|

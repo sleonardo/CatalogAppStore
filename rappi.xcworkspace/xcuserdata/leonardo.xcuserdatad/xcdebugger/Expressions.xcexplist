@@ -6,9 +6,6 @@
          contextName = "HomeViewController.(setup() -&gt; ()).(closure #1):HomeViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "swiftyJsonVar[&quot;feed&quot;][&quot;entry&quot;][&quot;category&quot;]">
-            </PersistentString>
-            <PersistentString
                value = "JSONResponse.rawData()">
             </PersistentString>
          </PersistentStrings>

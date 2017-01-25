@@ -6,4 +6,15 @@
 //  Copyright © 2017 Rappi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CollectionCell: UICollectionViewCell {
+    
+    @IBOutlet var imageView: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
+    }
+    
+}

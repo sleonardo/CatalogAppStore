@@ -12,42 +12,112 @@ import CoreData
 import SwiftyJSON
 import Alamofire
 import BTNavigationDropdownMenu
-
+import SDWebImage
 //import Alamofire_Gloss
+//import Gloss
 
-class HomeViewController: BaseController {
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    /// CollectionView to display our items in grid and list view
+    @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var tblJSON: UITableView!
     @IBOutlet weak var selectedCellLabel: UILabel!
+
+    @IBOutlet var gridButton: UIButton!
+    @IBOutlet var listButton: UIButton!
+    
+    //@IBOutlet var profileTitleLabel: UILabel!
+    @IBOutlet var detailLabel: UILabel!
+    //@IBOutlet var profileImageView: UIImageView!
+    @IBOutlet var headerView: UIView!
     
     var arrRes = [[String:AnyObject]]() //Array of dictionary
     var jsons: [String: AnyObject]!
     var topAppDic: [String: AnyObject]!
 
     var menuView: BTNavigationDropdownMenu!
+    var appCollectionResponse = [App]()
+    var dataJson = [JSON]()
+    
+    /// Items to display
+    var itemsToDisplay: [ImageToDisplay] = []
+    /// Flow layout that displays cells with a Grid layout
+    let gridFlowLayout = GridFlowLayout()
+    /// Flow layout that displays cells with a List layout, like in a tableView
+    let listFlowLayout = ListFlowLayout()
+    
+    /// True if the current flow layout is a grid
+    var isGridFlowLayoutUsed: Bool = false {
+        didSet {
+            listButton.alpha = (isGridFlowLayoutUsed == true) ? 0.9 : 1.0
+            gridButton.alpha = (isGridFlowLayoutUsed == true) ? 1.0 : 0.9
+        }
+    }
 
-    override func setup() {
+    override func viewDidLoad() {
         
-        ServiceWrapper.requestGETURL(GlobalConstants.Dev.baseUrl, success: {
+        /*ServiceWrapper.requestGETURL(GlobalConstants.Dev.baseUrl, success: {
             (JSONResponse) -> Void in
+            print("+--------------+--------------+--------------+--------------+")
             print(JSONResponse)
 
-        
-            /*do {
-//                self.json = try JSONSerialization.jsonObject(with: JSONResponse.rawData(), options: JSONSerialization.ReadingOptions()) as? TopApps
-                
-//                try self.json = JSONSerialization.jsonObject(with: JSONResponse.rawData(), options: JSONSerialization.ReadingOptions(rawValue: 0)) as? JSON
-                
-            } catch {
-                print(error)
-            }*/
-            
+            // convert the response using swiftyJSON
+            self.dataJson = (JSON(JSONResponse))
+
         }) {
             (error) -> Void in
             print(error)
+        }*/
+
+        Alamofire.request(GlobalConstants.Dev.baseUrl)
+            .validate()
+            .responseJSON { response in
+                // If the result is succes populate the table, otherwise show debug description
+                if response.result.isSuccess {
+                    self.dataJson = (JSON(response.result.value!))["feed"]["entry"].arrayValue
+                } else {
+                    print(response.debugDescription)
+                }
         }
+
+/*
+        Alamofire.request(GlobalConstants.Dev.baseUrl)
+            .validate()
+            .responseJSON { response in
+                // If the result is succes populate the table, otherwise show debug description
+                if response.result.isSuccess {
+                    self.dataJson = JSON(response.result.value!)
+                    print(self.dataJson)
+                } else {
+                    print(response.debugDescription)
+                }
+        }*/
+        /*
+        Alamofire.request(GlobalConstants.Dev.baseUrl).responseJSON { (responseObject) -> Void in
+            
+            print(responseObject)
+            
+            if responseObject.result.isSuccess {
+                let resJson = JSON(responseObject.result.value!)
+            }
+            if responseObject.result.isFailure {
+                let error : Error = responseObject.result.error!
+            }
+        }*/
+        
+        // apple structures the array of apps in feed.entry
+//        let feedArray = dataJson["feed"]["entry"]
+        // load up the app item objects into an array and pass it to the callback
         
         
+//        for (_, feed) in feedArray {
+//            appCollectionResponse.append(App(appJson: feed))
+//        }
+//        print("+--------------+--------------+--------------+--------------+")
+        
+//        print("+--------------+--------------+--------------+--------------+")
+        
+        /*
         let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
         self.selectedCellLabel.text = items.first
         self.navigationController?.navigationBar.isTranslucent = false
@@ -72,6 +142,7 @@ class HomeViewController: BaseController {
 
         }
         self.navigationItem.titleView = menuView
+        */
         /*Alamofire.request(GlobalConstants.Dev.baseUrl)
             .responseObject(TopApps.self) { (response) in
                 print (response)
@@ -129,13 +200,76 @@ class HomeViewController: BaseController {
                 
         }*/
         
+        setupDatasource()
+        setupInitialLayout()
     }
-
+    
+    func setupDatasource() {
+        itemsToDisplay = [ImageToDisplay(imageName: "1"), ImageToDisplay(imageName: "2"), ImageToDisplay(imageName: "3"), ImageToDisplay(imageName: "4"),
+                          ImageToDisplay(imageName: "5"), ImageToDisplay(imageName: "6"), ImageToDisplay(imageName: "7"), ImageToDisplay(imageName: "8"),
+                          ImageToDisplay(imageName: "9"), ImageToDisplay(imageName: "10")]
+        
+        collectionView.reloadData()
+        
+        //        detailLabel.text = "\(itemsToDisplay.count)" + " photos"
+    }
+    
+    func setupInitialLayout() {
+        isGridFlowLayoutUsed = true
+        collectionView.collectionViewLayout = gridFlowLayout
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func listButtonPressed() {
+        // change to list layout
+        isGridFlowLayoutUsed = false
+        
+        UIView.animate(withDuration: 0.2, animations: { () -> Void in
+            self.collectionView.collectionViewLayout.invalidateLayout()
+            self.collectionView.setCollectionViewLayout(self.listFlowLayout, animated: true)
+        })
+    }
+    
+    @IBAction func gridButtonPressed() {
+        // change to grid layout
+        isGridFlowLayoutUsed = true
+        
+        UIView.animate(withDuration: 0.2, animations: { () -> Void in
+            self.collectionView.collectionViewLayout.invalidateLayout()
+            self.collectionView.setCollectionViewLayout(self.gridFlowLayout, animated: true)
+        })
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionCell
+        
+        //let itemToDisplay = itemsToDisplay[indexPath.row]
+        let itemToDisplay = dataJson[indexPath.row]
+//        cell.imageView.image = UIImage(named: "\(itemToDisplay.imageName)"+".jpg")
+        let urlString = itemToDisplay["imageURLString"].string
+        
+        let url = URL(string: urlString!)
+        cell.imageView.sd_setImage(with: url)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return itemsToDisplay.count
+    }
+    
+    override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
 
 }
+
 

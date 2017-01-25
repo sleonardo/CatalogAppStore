@@ -6,6 +6,22 @@
 //  Copyright © 2017 Rappi. All rights reserved.
 //
 
+import Foundation
+import SwiftyJSON
+
+public class Feed {
+    
+    public var entries: [App]?
+    public var title: String? = nil
+    public var updated: String? = nil
+
+    init(feedJson: JSON) {
+        self.title = feedJson["title"].string
+        self.updated = feedJson["updated"].string
+    }
+}
+
+/*
 import Gloss
 
 public struct Feed: Decodable {
@@ -27,3 +43,5 @@ public struct Feed: Decodable {
     }
     
 }
+
+ */

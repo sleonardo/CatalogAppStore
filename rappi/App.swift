@@ -6,6 +6,23 @@
 //  Copyright © 2017 Rappi. All rights reserved.
 //
 
+import Foundation
+import SwiftyJSON
+
+public class App {
+    
+    var imageURLString:String? = nil
+    var name:String? = nil
+    
+    init(appJson:JSON){
+        self.imageURLString = appJson["im:image"][0]["label"].string
+        self.name = appJson["im:name"]["label"].string
+    }
+    
+}
+
+
+/*
 import Gloss
 
 public struct App: Decodable {
@@ -49,3 +66,4 @@ public struct App: Decodable {
 
     
 }
+*/
