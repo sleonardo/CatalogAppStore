@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "HomeViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemToDisplay[&quot;im:image&quot;][2][&quot;label&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "HomeViewController.(setup() -&gt; ()).(closure #1):HomeViewController.swift">
          <PersistentStrings>
             <PersistentString

@@ -56,20 +56,26 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
 
     override func viewDidLoad() {
         
-        /*ServiceWrapper.requestGETURL(GlobalConstants.Dev.baseUrl, success: {
+        ServiceWrapper.requestGETURL(GlobalConstants.Dev.baseUrl, success: {
             (JSONResponse) -> Void in
             print("+--------------+--------------+--------------+--------------+")
             print(JSONResponse)
 
-            // convert the response using swiftyJSON
-            self.dataJson = (JSON(JSONResponse))
+            self.dataJson = (JSONResponse)["feed"]["entry"].arrayValue
 
+            /*
+             let swiftyJsonVar = (JSONResponse)["feed"]
+             
+             if let resData = swiftyJsonVar["entry"].arrayObject {
+                self.arrRes = resData as! [[String:AnyObject]]
+             }
+             */
         }) {
             (error) -> Void in
             print(error)
-        }*/
+        }
 
-        Alamofire.request(GlobalConstants.Dev.baseUrl)
+        /*Alamofire.request(GlobalConstants.Dev.baseUrl)
             .validate()
             .responseJSON { response in
                 // If the result is succes populate the table, otherwise show debug description
@@ -78,7 +84,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
                 } else {
                     print(response.debugDescription)
                 }
-        }
+        }*/
 
 /*
         Alamofire.request(GlobalConstants.Dev.baseUrl)
@@ -250,7 +256,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         //let itemToDisplay = itemsToDisplay[indexPath.row]
         let itemToDisplay = dataJson[indexPath.row]
 //        cell.imageView.image = UIImage(named: "\(itemToDisplay.imageName)"+".jpg")
-        let urlString = itemToDisplay["imageURLString"].string
+        let urlString = itemToDisplay["im:image"][2]["label"].string
         
         let url = URL(string: urlString!)
         cell.imageView.sd_setImage(with: url)
@@ -263,7 +269,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemsToDisplay.count
+        return (dataJson.count)
     }
     
     override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
