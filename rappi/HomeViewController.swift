@@ -62,14 +62,15 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             print(JSONResponse)
 
             self.dataJson = (JSONResponse)["feed"]["entry"].arrayValue
-
             /*
-             let swiftyJsonVar = (JSONResponse)["feed"]
-             
-             if let resData = swiftyJsonVar["entry"].arrayObject {
-                self.arrRes = resData as! [[String:AnyObject]]
-             }
-             */
+            if let questions = (JSONResponse["feed"]["entry"].array?.map { return App.build($0) }) {
+            }*/
+            
+            for data in self.dataJson {
+                let newApp = App(appJson: data)
+                self.appCollectionResponse.append(newApp)
+            }
+
         }) {
             (error) -> Void in
             print(error)
@@ -254,9 +255,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionCell
         
         //let itemToDisplay = itemsToDisplay[indexPath.row]
-        let itemToDisplay = dataJson[indexPath.row]
+        let itemToDisplay = appCollectionResponse[indexPath.row]
 //        cell.imageView.image = UIImage(named: "\(itemToDisplay.imageName)"+".jpg")
-        let urlString = itemToDisplay["im:image"][2]["label"].string
+        let urlString = itemToDisplay.imageURLString
         
         let url = URL(string: urlString!)
         cell.imageView.sd_setImage(with: url)
@@ -269,7 +270,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (dataJson.count)
+        return (appCollectionResponse.count)
     }
     
     override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {

@@ -10,13 +10,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
+            timestampString = "506842381.551112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.menuView.setter : Swift.ImplicitlyUnwrappedOptional&lt;BTNavigationDropdownMenu.BTNavigationDropdownMenu&gt;"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.175461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; rappi.HomeViewController"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.176673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;rappi.HomeViewController&gt;"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.177868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +73,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
+            timestampString = "506842381.551112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +89,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
+            timestampString = "506842381.551112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; rappi.HomeViewController"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.203896"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;rappi.HomeViewController&gt;"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.205108"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "548">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,93 +137,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
+            timestampString = "506842381.551112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rappi/HomeViewController.swift"
-            timestampString = "507181896.519374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.gridFlowLayout.getter : rappi.GridFlowLayout"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.207488"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; rappi.HomeViewController"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.208787"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "586">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rappi.HomeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;rappi.HomeViewController&gt;"
+                  moduleName = "rappi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardo/Documents/dev/ios/CatalogAppStore/rappi/HomeViewController.swift"
+                  timestampString = "507238727.210031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "486">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

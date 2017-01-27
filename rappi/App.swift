@@ -13,10 +13,13 @@ public class App {
     
     var imageURLString:String? = nil
     var name:String? = nil
+    var price:Float? = 0.0
     
     init(appJson:JSON){
-        self.imageURLString = appJson["im:image"][0]["label"].string
-        self.name = appJson["im:name"]["label"].string
+        self.imageURLString = appJson["im:image"][1]["label"].stringValue
+        self.name = appJson["im:name"]["label"].stringValue
+        let priceJ = appJson["im:price"]
+        self.price = priceJ["label"].floatValue
     }
     
 }

@@ -11,10 +11,11 @@ import UIKit
 class CollectionCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var priceLabel: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()
         imageView.image = nil
+        priceLabel.text = nil
     }
-    
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class GridFlowLayout: UICollectionViewFlowLayout {
     
-    let itemHeight: CGFloat = 120
+    let itemHeight: CGFloat = 60
     
     override init() {
         super.init()
