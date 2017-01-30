@@ -3,6 +3,109 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "CategoryViewController.(callCategoryRequest() -&gt; ()).(closure #1):CategoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isContained">
+            </PersistentString>
+            <PersistentString
+               value = "cat.categoryId">
+            </PersistentString>
+            <PersistentString
+               value = "self.categoryModelArray">
+            </PersistentString>
+            <PersistentString
+               value = "newApp.categoryModel.categoryId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GridFlowLayout.setupLayout() -&gt; ():GridFlowLayout.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIDevice.current.localizedModel">
+            </PersistentString>
+            <PersistentString
+               value = "device">
+            </PersistentString>
+            <PersistentString
+               value = "viewController.contains(&quot;HomeViewController&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryViewController.(callCategoryRequest() -&gt; ()).(closure #1).(closure #1):CategoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cat? as CategoryModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryViewController.(callAppRequest() -&gt; ()).(closure #1):CategoryViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CategoryViewController.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():CategoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:CategoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(_:itemToDisplay.categoryId!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CollectionCell.prepareForReuse() -&gt; ():CollectionCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.(setup() -&gt; ()).(closure #1):HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSONResponse.rawData()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():CategoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "seletedCategory.categoryId">
+            </PersistentString>
+            <PersistentString
+               value = "seletedCategory.category">
+            </PersistentString>
+            <PersistentString
+               value = "appNew.categoryModel.categoryId">
+            </PersistentString>
+            <PersistentString
+               value = "appNew.categoryModel.category">
+            </PersistentString>
+            <PersistentString
+               value = "sender as! UIButton">
+            </PersistentString>
+            <PersistentString
+               value = "self.categoryName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryViewController.buttonTapped(UIButton) -&gt; ():CategoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.restorationIdentifier">
+            </PersistentString>
+            <PersistentString
+               value = "sender.titleLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "HomeViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:HomeViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,10 +114,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "HomeViewController.(setup() -&gt; ()).(closure #1):HomeViewController.swift">
+         contextName = "CategoryModel.unwrapping(entityJson : [String : JSON]) -&gt; ():CategoryModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "JSONResponse.rawData()">
+               value = "entityJson[&quot;im:id&quot;]?.intValue">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

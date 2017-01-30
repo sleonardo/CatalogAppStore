@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30CA8C2C8F2574B576A93474 /* Pods_rappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FC222B475B66FA6CBF7768 /* Pods_rappi.framework */; };
+		4FC6A0E806362311AB92CCFC /* Pods_rappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024283B9F3D16FC4D825CCB /* Pods_rappi.framework */; };
 		A74731121E35A687004B9059 /* BTNavigationDropdownMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74731111E35A687004B9059 /* BTNavigationDropdownMenu.framework */; };
 		A74731151E35ABE0004B9059 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A74731131E35ABE0004B9059 /* BTNavigationDropdownMenu.bundle */; };
 		A74731181E35B5BA004B9059 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74731171E35B5BA004B9059 /* ServiceWrapper.swift */; };
+		A751447F1E3CE97000D53703 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A751447E1E3CE97000D53703 /* Service.swift */; };
+		A75144811E3CE97900D53703 /* ShellWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75144801E3CE97900D53703 /* ShellWebService.swift */; };
+		A75144831E3CEF1500D53703 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75144821E3CEF1500D53703 /* ViewControllerExtension.swift */; };
+		A75144851E3D274300D53703 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75144841E3D274300D53703 /* DetailViewController.swift */; };
 		A75EDF131E342860004810E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF121E342860004810E6 /* AppDelegate.swift */; };
 		A75EDF151E342860004810E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF141E342860004810E6 /* HomeViewController.swift */; };
 		A75EDF181E342860004810E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EDF161E342860004810E6 /* Main.storyboard */; };
@@ -18,10 +22,12 @@
 		A75EDF1D1E342860004810E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75EDF1C1E342860004810E6 /* Assets.xcassets */; };
 		A75EDF201E342860004810E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EDF1E1E342860004810E6 /* LaunchScreen.storyboard */; };
 		A75EDF311E347C3B004810E6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF301E347C3B004810E6 /* Feed.swift */; };
-		A75EDF331E34839B004810E6 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF321E34839B004810E6 /* App.swift */; };
+		A75EDF331E34839B004810E6 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF321E34839B004810E6 /* AppModel.swift */; };
 		A75EDF351E3484DC004810E6 /* TopApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF341E3484DC004810E6 /* TopApps.swift */; };
 		A75EDF371E34865F004810E6 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF361E34865F004810E6 /* GlobalConstants.swift */; };
 		A75EDF3E1E3493C3004810E6 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF3D1E3493C3004810E6 /* BaseController.swift */; };
+		A797F0281E3F0D4A005F848D /* GridFlowLayoutHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797F0261E3F0D49005F848D /* GridFlowLayoutHome.swift */; };
+		A797F0291E3F0D4A005F848D /* ListFlowLayoutHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797F0271E3F0D4A005F848D /* ListFlowLayoutHome.swift */; };
 		A7B62FC61E3852FE006BC7A1 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B62FC51E3852FE006BC7A1 /* CollectionCell.swift */; };
 		A7B62FC81E3853C2006BC7A1 /* ListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B62FC71E3853C2006BC7A1 /* ListFlowLayout.swift */; };
 		A7B62FCA1E3853F3006BC7A1 /* GridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B62FC91E3853F3006BC7A1 /* GridFlowLayout.swift */; };
@@ -35,12 +41,21 @@
 		A7B62FDD1E3856EA006BC7A1 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7B62FD31E3856EA006BC7A1 /* 8.jpg */; };
 		A7B62FDE1E3856EA006BC7A1 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7B62FD41E3856EA006BC7A1 /* 9.jpg */; };
 		A7B62FDF1E3856EA006BC7A1 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7B62FD51E3856EA006BC7A1 /* 10.jpg */; };
+		A7E2F3401E3E1B240055A7F8 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2F33F1E3E1B240055A7F8 /* CategoryModel.swift */; };
+		A7E2F3421E3E219D0055A7F8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2F3411E3E219D0055A7F8 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7024283B9F3D16FC4D825CCB /* Pods_rappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rappi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738E553D83FE6E45972B3338 /* Pods-rappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.release.xcconfig"; sourceTree = "<group>"; };
+		83281471BEDAEA82C74BD8E3 /* Pods-rappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.debug.xcconfig"; sourceTree = "<group>"; };
 		A74731111E35A687004B9059 /* BTNavigationDropdownMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BTNavigationDropdownMenu.framework; path = "../../../../Library/Developer/Xcode/DerivedData/rappi-amznbasrggjzfxcnopfnfkkvjktu/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework"; sourceTree = "<group>"; };
 		A74731131E35ABE0004B9059 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
 		A74731171E35B5BA004B9059 /* ServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
+		A751447E1E3CE97000D53703 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service\U001b.swift"; sourceTree = "<group>"; };
+		A75144801E3CE97900D53703 /* ShellWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShellWebService.swift; sourceTree = "<group>"; };
+		A75144821E3CEF1500D53703 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		A75144841E3D274300D53703 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A75EDF0F1E342860004810E6 /* rappi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rappi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75EDF121E342860004810E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75EDF141E342860004810E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -50,10 +65,12 @@
 		A75EDF1F1E342860004810E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75EDF211E342860004810E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A75EDF301E347C3B004810E6 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		A75EDF321E34839B004810E6 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A75EDF321E34839B004810E6 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		A75EDF341E3484DC004810E6 /* TopApps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopApps.swift; sourceTree = "<group>"; };
 		A75EDF361E34865F004810E6 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		A75EDF3D1E3493C3004810E6 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		A797F0261E3F0D49005F848D /* GridFlowLayoutHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridFlowLayoutHome.swift; sourceTree = "<group>"; };
+		A797F0271E3F0D4A005F848D /* ListFlowLayoutHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFlowLayoutHome.swift; sourceTree = "<group>"; };
 		A7B62FC51E3852FE006BC7A1 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		A7B62FC71E3853C2006BC7A1 /* ListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFlowLayout.swift; sourceTree = "<group>"; };
 		A7B62FC91E3853F3006BC7A1 /* GridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridFlowLayout.swift; sourceTree = "<group>"; };
@@ -67,9 +84,8 @@
 		A7B62FD31E3856EA006BC7A1 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		A7B62FD41E3856EA006BC7A1 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		A7B62FD51E3856EA006BC7A1 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
-		B396E7CD6433B3F8ED536AB1 /* Pods-rappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.debug.xcconfig"; sourceTree = "<group>"; };
-		C0FC222B475B66FA6CBF7768 /* Pods_rappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rappi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F027608192A3EE9EEBDD76EA /* Pods-rappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.release.xcconfig"; sourceTree = "<group>"; };
+		A7E2F33F1E3E1B240055A7F8 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		A7E2F3411E3E219D0055A7F8 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,18 +94,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A74731121E35A687004B9059 /* BTNavigationDropdownMenu.framework in Frameworks */,
-				30CA8C2C8F2574B576A93474 /* Pods_rappi.framework in Frameworks */,
+				4FC6A0E806362311AB92CCFC /* Pods_rappi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64B1CE376670743337C82069 /* Pods */ = {
+		2528EDAC3016607998121854 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B396E7CD6433B3F8ED536AB1 /* Pods-rappi.debug.xcconfig */,
-				F027608192A3EE9EEBDD76EA /* Pods-rappi.release.xcconfig */,
+				83281471BEDAEA82C74BD8E3 /* Pods-rappi.debug.xcconfig */,
+				738E553D83FE6E45972B3338 /* Pods-rappi.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A74731111E35A687004B9059 /* BTNavigationDropdownMenu.framework */,
-				C0FC222B475B66FA6CBF7768 /* Pods_rappi.framework */,
+				7024283B9F3D16FC4D825CCB /* Pods_rappi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +122,8 @@
 		A74731191E35B70C004B9059 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A75144801E3CE97900D53703 /* ShellWebService.swift */,
+				A751447E1E3CE97000D53703 /* Service.swift */,
 				A74731171E35B5BA004B9059 /* ServiceWrapper.swift */,
 			);
 			name = Service;
@@ -116,8 +134,8 @@
 			children = (
 				A75EDF111E342860004810E6 /* rappi */,
 				A75EDF101E342860004810E6 /* Products */,
-				64B1CE376670743337C82069 /* Pods */,
 				9C4A5D5EB180D14A8BEEF492 /* Frameworks */,
+				2528EDAC3016607998121854 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,11 +172,15 @@
 		A75EDF281E34627C004810E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A75EDF141E342860004810E6 /* HomeViewController.swift */,
-				A75EDF3D1E3493C3004810E6 /* BaseController.swift */,
+				A797F0261E3F0D49005F848D /* GridFlowLayoutHome.swift */,
+				A797F0271E3F0D4A005F848D /* ListFlowLayoutHome.swift */,
 				A7B62FC51E3852FE006BC7A1 /* CollectionCell.swift */,
+				A75EDF3D1E3493C3004810E6 /* BaseController.swift */,
+				A75EDF141E342860004810E6 /* HomeViewController.swift */,
+				A75144841E3D274300D53703 /* DetailViewController.swift */,
 				A7B62FC71E3853C2006BC7A1 /* ListFlowLayout.swift */,
 				A7B62FC91E3853F3006BC7A1 /* GridFlowLayout.swift */,
+				A7E2F3411E3E219D0055A7F8 /* CategoryViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,7 +227,8 @@
 				A75EDF191E342860004810E6 /* rappi.xcdatamodeld */,
 				A75EDF341E3484DC004810E6 /* TopApps.swift */,
 				A75EDF301E347C3B004810E6 /* Feed.swift */,
-				A75EDF321E34839B004810E6 /* App.swift */,
+				A75EDF321E34839B004810E6 /* AppModel.swift */,
+				A7E2F33F1E3E1B240055A7F8 /* CategoryModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -214,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				A75EDF361E34865F004810E6 /* GlobalConstants.swift */,
+				A75144821E3CEF1500D53703 /* ViewControllerExtension.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -250,12 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A75EDF241E342860004810E6 /* Build configuration list for PBXNativeTarget "rappi" */;
 			buildPhases = (
-				4A67786AA184D16020A7E008 /* [CP] Check Pods Manifest.lock */,
+				71FF281BD09AB32BCA7062D4 /* [CP] Check Pods Manifest.lock */,
 				A75EDF0B1E342860004810E6 /* Sources */,
 				A75EDF0C1E342860004810E6 /* Frameworks */,
 				A75EDF0D1E342860004810E6 /* Resources */,
-				94C00281D9DBE48AA5261281 /* [CP] Embed Pods Frameworks */,
-				4C2256C3D80FB354CFC20398 /* [CP] Copy Pods Resources */,
+				563B88C747795AC082A0D539 /* [CP] Embed Pods Frameworks */,
+				D0A4849C12053EBC7A30262B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,37 +349,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A67786AA184D16020A7E008 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4C2256C3D80FB354CFC20398 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rappi/Pods-rappi-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94C00281D9DBE48AA5261281 /* [CP] Embed Pods Frameworks */ = {
+		563B88C747795AC082A0D539 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,6 +364,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rappi/Pods-rappi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		71FF281BD09AB32BCA7062D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A4849C12053EBC7A30262B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rappi/Pods-rappi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -377,18 +401,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A797F0281E3F0D4A005F848D /* GridFlowLayoutHome.swift in Sources */,
 				A75EDF151E342860004810E6 /* HomeViewController.swift in Sources */,
 				A75EDF3E1E3493C3004810E6 /* BaseController.swift in Sources */,
 				A75EDF311E347C3B004810E6 /* Feed.swift in Sources */,
 				A7B62FCA1E3853F3006BC7A1 /* GridFlowLayout.swift in Sources */,
+				A7E2F3401E3E1B240055A7F8 /* CategoryModel.swift in Sources */,
 				A74731181E35B5BA004B9059 /* ServiceWrapper.swift in Sources */,
 				A75EDF1B1E342860004810E6 /* rappi.xcdatamodeld in Sources */,
 				A75EDF351E3484DC004810E6 /* TopApps.swift in Sources */,
+				A75144851E3D274300D53703 /* DetailViewController.swift in Sources */,
 				A75EDF371E34865F004810E6 /* GlobalConstants.swift in Sources */,
+				A75144831E3CEF1500D53703 /* ViewControllerExtension.swift in Sources */,
 				A7B62FC81E3853C2006BC7A1 /* ListFlowLayout.swift in Sources */,
-				A75EDF331E34839B004810E6 /* App.swift in Sources */,
+				A751447F1E3CE97000D53703 /* Service.swift in Sources */,
+				A75EDF331E34839B004810E6 /* AppModel.swift in Sources */,
+				A75144811E3CE97900D53703 /* ShellWebService.swift in Sources */,
 				A75EDF131E342860004810E6 /* AppDelegate.swift in Sources */,
+				A7E2F3421E3E219D0055A7F8 /* CategoryViewController.swift in Sources */,
 				A7B62FC61E3852FE006BC7A1 /* CollectionCell.swift in Sources */,
+				A797F0291E3F0D4A005F848D /* ListFlowLayoutHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,8 +541,9 @@
 		};
 		A75EDF251E342860004810E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B396E7CD6433B3F8ED536AB1 /* Pods-rappi.debug.xcconfig */;
+			baseConfigurationReference = 83281471BEDAEA82C74BD8E3 /* Pods-rappi.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rappi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -524,8 +557,9 @@
 		};
 		A75EDF261E342860004810E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F027608192A3EE9EEBDD76EA /* Pods-rappi.release.xcconfig */;
+			baseConfigurationReference = 738E553D83FE6E45972B3338 /* Pods-rappi.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rappi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;

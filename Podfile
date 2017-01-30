@@ -10,6 +10,9 @@ use_frameworks!
     pod 'Alamofire-Gloss'
     pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
     pod 'SDWebImage', '~>3.8'
+    pod 'SVProgressHUD'
+    pod 'Hero'
+    pod 'GuillotineMenu', '~> 3.0'
 end
 
 post_install do |installer|

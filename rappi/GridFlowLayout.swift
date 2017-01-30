@@ -10,7 +10,9 @@ import UIKit
 
 class GridFlowLayout: UICollectionViewFlowLayout {
     
-    let itemHeight: CGFloat = 60
+    var itemHeight: CGFloat = 200
+    var minimumItemsByCell: CGFloat = 1
+    var viewController: String! = "CategoryViewController"
     
     override init() {
         super.init()
@@ -29,10 +31,28 @@ class GridFlowLayout: UICollectionViewFlowLayout {
         minimumInteritemSpacing = 1
         minimumLineSpacing = 1
         scrollDirection = .vertical
+        let device = UIDevice.current.localizedModel
+        if viewController.contains("HomeViewController") {
+            if device.contains("iPhone") {
+                self.itemHeight = 150
+                self.minimumItemsByCell = CGFloat(1)
+            } else {
+                self.minimumItemsByCell = CGFloat(3)
+                self.itemHeight = 200
+            }
+        }else{
+            if device.contains("iPhone") {
+                self.itemHeight = 70
+                self.minimumItemsByCell = CGFloat(1)
+            } else {
+                self.minimumItemsByCell = CGFloat(3)
+                self.itemHeight = 70
+            }
+        }
     }
     
     func itemWidth() -> CGFloat {
-        return (collectionView!.frame.width/2)-1
+        return (collectionView!.frame.width/minimumItemsByCell)-1
     }
     
     override var itemSize: CGSize {

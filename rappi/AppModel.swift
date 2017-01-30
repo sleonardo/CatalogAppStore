@@ -2,26 +2,41 @@
 //  App.swift
 //  rappi
 //
-//  Created by Leonardo Simoza on 22/1/17.
+//  Created by Leonardo Simoza on 23/1/17.
 //  Copyright © 2017 Rappi. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-public class App {
+public class AppModel {
     
     var imageURLString:String? = nil
     var name:String? = nil
+    var link:String? = nil
     var price:Float? = 0.0
+    var summary:String? = nil
+    var artist:String? = nil
+    var categoryModel:CategoryModel = CategoryModel()
+
+    init(){}
     
-    init(appJson:JSON){
-        self.imageURLString = appJson["im:image"][1]["label"].stringValue
-        self.name = appJson["im:name"]["label"].stringValue
-        let priceJ = appJson["im:price"]
-        self.price = priceJ["label"].floatValue
+    func unwrapping(entityJson:JSON){
+        self.imageURLString = entityJson["im:image"][1]["label"].stringValue
+        self.name = entityJson["im:name"]["label"].stringValue
+        //Option 1 for access to dictionary within another dictionary
+        self.link = entityJson["im:link"]["attributes"]["label"].stringValue
+        //Option 2 for access to dictionary within another dictionary
+        let priceJson = entityJson["im:price"]
+        self.price = priceJson["attributes"]["amount"].floatValue
+        //Option 3 for access to dictionary within another dictionary
+        let categoryJson = entityJson["category"]["attributes"].dictionary
+        self.categoryModel.unwrapping(entityJson: categoryJson!)
+        self.summary = entityJson["summary"]["label"].stringValue
+        self.artist = entityJson["im:artist"]["label"].stringValue
+        
     }
-    
+    func alloc() -> AppModel {return AppModel()}
 }
 
 

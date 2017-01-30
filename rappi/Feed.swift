@@ -2,7 +2,7 @@
 //  Feed.swift
 //  rappi
 //
-//  Created by Leonardo Simoza on 22/1/17.
+//  Created by Leonardo Simoza on 23/1/17.
 //  Copyright © 2017 Rappi. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class Feed {
     
-    public var entries: [App]?
+    public var entries: [AppModel]?
     public var title: String? = nil
     public var updated: String? = nil
 

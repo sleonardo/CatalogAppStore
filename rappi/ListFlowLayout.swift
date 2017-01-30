@@ -10,7 +10,8 @@ import UIKit
 
 class ListFlowLayout: UICollectionViewFlowLayout {
     
-    let itemHeight: CGFloat = 60
+    var itemHeight: CGFloat = 200
+    var viewController: String! = "CategoryViewController"
     
     override init() {
         super.init()
@@ -33,9 +34,23 @@ class ListFlowLayout: UICollectionViewFlowLayout {
      Sets up the layout for the collectionView. 0 distance between each cell, and vertical layout
      */
     func setupLayout() {
-        minimumInteritemSpacing = 2
-        minimumLineSpacing = 3
+        minimumInteritemSpacing = 1
+        minimumLineSpacing = 1
         scrollDirection = .vertical
+        let device = UIDevice.current.localizedModel
+        if viewController.contains("HomeViewController") {
+            if device.contains("iPhone") {
+                self.itemHeight = 150
+            } else {
+                self.itemHeight = 200
+            }
+        }else{
+            if device.contains("iPhone") {
+                self.itemHeight = 150
+            } else {
+                self.itemHeight = 200
+            }
+        }
     }
     
     func itemWidth() -> CGFloat {
