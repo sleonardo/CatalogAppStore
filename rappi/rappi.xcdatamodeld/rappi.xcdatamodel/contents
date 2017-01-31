@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="AppModel" representedClassName="AppModel" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Apps" representedClassName="Apps" syncable="YES" codeGenerationType="class">
         <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageURLString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeSaved" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="appBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="appBy" inverseEntity="Categories" syncable="YES"/>
     </entity>
-    <entity name="CategoryModel" representedClassName="CategoryModel" syncable="YES" codeGenerationType="class"/>
+    <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="categoryUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeSaved" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="appBy" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Apps" inverseName="appBy" inverseEntity="Apps" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="AppModel" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="CategoryModel" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="Apps" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="Categories" positionX="207" positionY="9" width="128" height="118"/>
     </elements>
 </model>

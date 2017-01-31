@@ -6,13 +6,19 @@ target 'rappi' do
 use_frameworks!
 
 # Pods for rappi
-    pod 'SwiftyJSON'
-    pod 'Alamofire-Gloss'
-    pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
-    pod 'SDWebImage', '~>3.8'
-    pod 'SVProgressHUD'
-    pod 'Hero'
-    pod 'GuillotineMenu', '~> 3.0'
+pod 'SwiftyJSON'
+pod 'Alamofire-Gloss'
+pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
+pod 'SDWebImage', '~>3.8'
+pod 'SVProgressHUD'
+pod 'Hero'
+pod 'GuillotineMenu', '~> 3.0'
+pod 'SwiftyJSON'
+pod 'Alamofire'
+pod 'SDWebImage', '~>3.8'
+pod 'SVProgressHUD'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+
 end
 
 post_install do |installer|

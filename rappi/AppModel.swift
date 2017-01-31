@@ -18,7 +18,11 @@ public class AppModel {
     var summary:String? = nil
     var artist:String? = nil
     var categoryModel:CategoryModel = CategoryModel()
-
+//    var releaseDate : String!
+//    var linkiTunes : String!
+//    var rights : String!
+//    var title : String!
+    
     init(){}
     
     func unwrapping(entityJson:JSON){
@@ -34,7 +38,7 @@ public class AppModel {
         self.categoryModel.unwrapping(entityJson: categoryJson!)
         self.summary = entityJson["summary"]["label"].stringValue
         self.artist = entityJson["im:artist"]["label"].stringValue
-        
+
     }
     func alloc() -> AppModel {return AppModel()}
 }

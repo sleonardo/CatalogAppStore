@@ -10,11 +10,6 @@ import UIKit
 import Foundation
 import CoreData
 
-struct ImageToDisplay {
-    
-    var imageName: String
-}
-
 class BaseController: UIViewController {
     
     override func viewDidLoad() {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FC6A0E806362311AB92CCFC /* Pods_rappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024283B9F3D16FC4D825CCB /* Pods_rappi.framework */; };
+		3D2325CD6355C62FAF760241 /* Pods_rappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63523E3E33ACB56E501D0FA /* Pods_rappi.framework */; };
 		A74731121E35A687004B9059 /* BTNavigationDropdownMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74731111E35A687004B9059 /* BTNavigationDropdownMenu.framework */; };
 		A74731151E35ABE0004B9059 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A74731131E35ABE0004B9059 /* BTNavigationDropdownMenu.bundle */; };
 		A74731181E35B5BA004B9059 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74731171E35B5BA004B9059 /* ServiceWrapper.swift */; };
@@ -21,9 +21,7 @@
 		A75EDF1B1E342860004810E6 /* rappi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF191E342860004810E6 /* rappi.xcdatamodeld */; };
 		A75EDF1D1E342860004810E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75EDF1C1E342860004810E6 /* Assets.xcassets */; };
 		A75EDF201E342860004810E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EDF1E1E342860004810E6 /* LaunchScreen.storyboard */; };
-		A75EDF311E347C3B004810E6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF301E347C3B004810E6 /* Feed.swift */; };
 		A75EDF331E34839B004810E6 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF321E34839B004810E6 /* AppModel.swift */; };
-		A75EDF351E3484DC004810E6 /* TopApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF341E3484DC004810E6 /* TopApps.swift */; };
 		A75EDF371E34865F004810E6 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF361E34865F004810E6 /* GlobalConstants.swift */; };
 		A75EDF3E1E3493C3004810E6 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EDF3D1E3493C3004810E6 /* BaseController.swift */; };
 		A797F0281E3F0D4A005F848D /* GridFlowLayoutHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797F0261E3F0D49005F848D /* GridFlowLayoutHome.swift */; };
@@ -41,14 +39,15 @@
 		A7B62FDD1E3856EA006BC7A1 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7B62FD31E3856EA006BC7A1 /* 8.jpg */; };
 		A7B62FDE1E3856EA006BC7A1 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7B62FD41E3856EA006BC7A1 /* 9.jpg */; };
 		A7B62FDF1E3856EA006BC7A1 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7B62FD51E3856EA006BC7A1 /* 10.jpg */; };
+		A7E11B321E40088700012151 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E11B311E40088700012151 /* PersistenceManager.swift */; };
+		A7E11B341E400CEF00012151 /* RappiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E11B331E400CEE00012151 /* RappiHelper.swift */; };
 		A7E2F3401E3E1B240055A7F8 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2F33F1E3E1B240055A7F8 /* CategoryModel.swift */; };
 		A7E2F3421E3E219D0055A7F8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2F3411E3E219D0055A7F8 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7024283B9F3D16FC4D825CCB /* Pods_rappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rappi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		738E553D83FE6E45972B3338 /* Pods-rappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.release.xcconfig"; sourceTree = "<group>"; };
-		83281471BEDAEA82C74BD8E3 /* Pods-rappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.debug.xcconfig"; sourceTree = "<group>"; };
+		317851C745CFE2FC1A4FDC71 /* Pods-rappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.release.xcconfig"; sourceTree = "<group>"; };
+		6A70C84D90727466A4DD9534 /* Pods-rappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rappi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rappi/Pods-rappi.debug.xcconfig"; sourceTree = "<group>"; };
 		A74731111E35A687004B9059 /* BTNavigationDropdownMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BTNavigationDropdownMenu.framework; path = "../../../../Library/Developer/Xcode/DerivedData/rappi-amznbasrggjzfxcnopfnfkkvjktu/Build/Products/Debug-iphonesimulator/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework"; sourceTree = "<group>"; };
 		A74731131E35ABE0004B9059 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
 		A74731171E35B5BA004B9059 /* ServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
@@ -64,9 +63,7 @@
 		A75EDF1C1E342860004810E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75EDF1F1E342860004810E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75EDF211E342860004810E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A75EDF301E347C3B004810E6 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		A75EDF321E34839B004810E6 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		A75EDF341E3484DC004810E6 /* TopApps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopApps.swift; sourceTree = "<group>"; };
 		A75EDF361E34865F004810E6 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		A75EDF3D1E3493C3004810E6 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		A797F0261E3F0D49005F848D /* GridFlowLayoutHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridFlowLayoutHome.swift; sourceTree = "<group>"; };
@@ -84,8 +81,11 @@
 		A7B62FD31E3856EA006BC7A1 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		A7B62FD41E3856EA006BC7A1 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		A7B62FD51E3856EA006BC7A1 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		A7E11B311E40088700012151 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		A7E11B331E400CEE00012151 /* RappiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiHelper.swift; sourceTree = "<group>"; };
 		A7E2F33F1E3E1B240055A7F8 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		A7E2F3411E3E219D0055A7F8 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		B63523E3E33ACB56E501D0FA /* Pods_rappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rappi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,18 +94,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A74731121E35A687004B9059 /* BTNavigationDropdownMenu.framework in Frameworks */,
-				4FC6A0E806362311AB92CCFC /* Pods_rappi.framework in Frameworks */,
+				3D2325CD6355C62FAF760241 /* Pods_rappi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2528EDAC3016607998121854 /* Pods */ = {
+		8914760D5B83D44B305C491E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				83281471BEDAEA82C74BD8E3 /* Pods-rappi.debug.xcconfig */,
-				738E553D83FE6E45972B3338 /* Pods-rappi.release.xcconfig */,
+				6A70C84D90727466A4DD9534 /* Pods-rappi.debug.xcconfig */,
+				317851C745CFE2FC1A4FDC71 /* Pods-rappi.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A74731111E35A687004B9059 /* BTNavigationDropdownMenu.framework */,
-				7024283B9F3D16FC4D825CCB /* Pods_rappi.framework */,
+				B63523E3E33ACB56E501D0FA /* Pods_rappi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 				A75EDF111E342860004810E6 /* rappi */,
 				A75EDF101E342860004810E6 /* Products */,
 				9C4A5D5EB180D14A8BEEF492 /* Frameworks */,
-				2528EDAC3016607998121854 /* Pods */,
+				8914760D5B83D44B305C491E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +150,7 @@
 		A75EDF111E342860004810E6 /* rappi */ = {
 			isa = PBXGroup;
 			children = (
+				A7E11B301E40087700012151 /* Manager */,
 				A75EDF271E34626B004810E6 /* Application */,
 				A75EDF281E34627C004810E6 /* Controllers */,
 				A75EDF2D1E3464D4004810E6 /* Models */,
@@ -225,8 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				A75EDF191E342860004810E6 /* rappi.xcdatamodeld */,
-				A75EDF341E3484DC004810E6 /* TopApps.swift */,
-				A75EDF301E347C3B004810E6 /* Feed.swift */,
 				A75EDF321E34839B004810E6 /* AppModel.swift */,
 				A7E2F33F1E3E1B240055A7F8 /* CategoryModel.swift */,
 			);
@@ -238,6 +237,7 @@
 			children = (
 				A75EDF361E34865F004810E6 /* GlobalConstants.swift */,
 				A75144821E3CEF1500D53703 /* ViewControllerExtension.swift */,
+				A7E11B331E400CEE00012151 /* RappiHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -267,6 +267,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		A7E11B301E40087700012151 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7E11B311E40088700012151 /* PersistenceManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,12 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A75EDF241E342860004810E6 /* Build configuration list for PBXNativeTarget "rappi" */;
 			buildPhases = (
-				71FF281BD09AB32BCA7062D4 /* [CP] Check Pods Manifest.lock */,
+				F3DC056BB813436A2FC6F3F4 /* [CP] Check Pods Manifest.lock */,
 				A75EDF0B1E342860004810E6 /* Sources */,
 				A75EDF0C1E342860004810E6 /* Frameworks */,
 				A75EDF0D1E342860004810E6 /* Resources */,
-				563B88C747795AC082A0D539 /* [CP] Embed Pods Frameworks */,
-				D0A4849C12053EBC7A30262B /* [CP] Copy Pods Resources */,
+				3AE4F650CE670CFC2BDA6F9F /* [CP] Embed Pods Frameworks */,
+				01805AD9609213FD7919AA86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,37 +357,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		563B88C747795AC082A0D539 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rappi/Pods-rappi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71FF281BD09AB32BCA7062D4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D0A4849C12053EBC7A30262B /* [CP] Copy Pods Resources */ = {
+		01805AD9609213FD7919AA86 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,6 +372,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rappi/Pods-rappi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3AE4F650CE670CFC2BDA6F9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rappi/Pods-rappi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DC056BB813436A2FC6F3F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -404,18 +412,18 @@
 				A797F0281E3F0D4A005F848D /* GridFlowLayoutHome.swift in Sources */,
 				A75EDF151E342860004810E6 /* HomeViewController.swift in Sources */,
 				A75EDF3E1E3493C3004810E6 /* BaseController.swift in Sources */,
-				A75EDF311E347C3B004810E6 /* Feed.swift in Sources */,
 				A7B62FCA1E3853F3006BC7A1 /* GridFlowLayout.swift in Sources */,
 				A7E2F3401E3E1B240055A7F8 /* CategoryModel.swift in Sources */,
 				A74731181E35B5BA004B9059 /* ServiceWrapper.swift in Sources */,
 				A75EDF1B1E342860004810E6 /* rappi.xcdatamodeld in Sources */,
-				A75EDF351E3484DC004810E6 /* TopApps.swift in Sources */,
 				A75144851E3D274300D53703 /* DetailViewController.swift in Sources */,
 				A75EDF371E34865F004810E6 /* GlobalConstants.swift in Sources */,
 				A75144831E3CEF1500D53703 /* ViewControllerExtension.swift in Sources */,
 				A7B62FC81E3853C2006BC7A1 /* ListFlowLayout.swift in Sources */,
 				A751447F1E3CE97000D53703 /* Service.swift in Sources */,
+				A7E11B341E400CEF00012151 /* RappiHelper.swift in Sources */,
 				A75EDF331E34839B004810E6 /* AppModel.swift in Sources */,
+				A7E11B321E40088700012151 /* PersistenceManager.swift in Sources */,
 				A75144811E3CE97900D53703 /* ShellWebService.swift in Sources */,
 				A75EDF131E342860004810E6 /* AppDelegate.swift in Sources */,
 				A7E2F3421E3E219D0055A7F8 /* CategoryViewController.swift in Sources */,
@@ -541,7 +549,7 @@
 		};
 		A75EDF251E342860004810E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83281471BEDAEA82C74BD8E3 /* Pods-rappi.debug.xcconfig */;
+			baseConfigurationReference = 6A70C84D90727466A4DD9534 /* Pods-rappi.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -557,7 +565,7 @@
 		};
 		A75EDF261E342860004810E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 738E553D83FE6E45972B3338 /* Pods-rappi.release.xcconfig */;
+			baseConfigurationReference = 317851C745CFE2FC1A4FDC71 /* Pods-rappi.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

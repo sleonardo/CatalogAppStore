@@ -8,7 +8,6 @@
 
 import SwiftyJSON
 import Alamofire
-import BTNavigationDropdownMenu
 import SDWebImage
 //import Alamofire_Gloss
 //import Gloss

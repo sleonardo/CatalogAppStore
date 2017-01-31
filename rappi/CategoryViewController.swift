@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import CoreData
 
 class CategoryViewController: BaseController, UICollectionViewDataSource, UICollectionViewDelegate,  UIViewControllerTransitioningDelegate {
     
@@ -45,6 +46,13 @@ class CategoryViewController: BaseController, UICollectionViewDataSource, UIColl
     
     //MARK: API Calls
     func callCategoryRequest(){
+        
+        //Access to CoreData
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let context = appDelegate.persistentContainer.viewContext
+//        let entityApps = NSEntityDescription.insertNewObject(forEntityName: "apps", into: context)
+//        let entityCategories = NSEntityDescription.insertNewObject(forEntityName: "categories", into: context)
+        
         ServiceWrapper.requestGETURL(GlobalConstants.Dev.getTopFreeAppsWithLimit(limit: "10"), success: {
             (JSONResponse) -> Void in
             print("+--------------+--------------+--------------+--------------+")

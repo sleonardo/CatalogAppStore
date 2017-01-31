@@ -23,7 +23,5 @@ public class CategoryModel {
         self.categoryUrl = entityJson["scheme"]?.rawValue as! String?
         self.categoryId = entityJson["im:id"]?.intValue
     }
-    
-    
-    
+
 }

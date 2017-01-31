@@ -12,15 +12,18 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - Spring (1.0.3)
   - SVProgressHUD (2.1.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire
   - Alamofire-Gloss
   - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
   - GuillotineMenu (~> 3.0)
   - Hero
   - SDWebImage (~> 3.8)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SVProgressHUD
   - SwiftyJSON
 
@@ -28,11 +31,17 @@ EXTERNAL SOURCES:
   BTNavigationDropdownMenu:
     :branch: swift-3.0
     :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
 
 CHECKOUT OPTIONS:
   BTNavigationDropdownMenu:
     :commit: 2c08c8579cf7a53ecb3dbf578e6e1034080a9859
     :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
@@ -42,9 +51,10 @@ SPEC CHECKSUMS:
   GuillotineMenu: 611ccb58ae092f2d929535377570ef25a7b5bc63
   Hero: b855122bc80662e7446300ca18c9e4bcb0679540
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 1c70d419a5fb45f80a688f68d99a2e7f4ee5d73e
+PODFILE CHECKSUM: ca4f41a92c38fa37975e7b9bc49533ab7da30a59
 
 COCOAPODS: 1.1.1
