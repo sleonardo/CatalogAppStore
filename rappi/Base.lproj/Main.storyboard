@@ -47,10 +47,6 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-DZ-jb3">
                                 <rect key="frame" x="20" y="92" width="339" height="555"/>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.78823529411764703" blue="0.66666666666666663" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="339" id="BIH-N9-0o9"/>
-                                    <constraint firstAttribute="height" constant="555" id="KRp-mx-8vG"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sG9-uv-GE2">
                                     <size key="itemSize" width="331" height="59"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -282,7 +278,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="UaB-Jf-rvD" firstAttribute="leading" secondItem="ulf-J9-3eX" secondAttribute="leadingMargin" id="cpd-NP-Cwg">
-                                <variation key="heightClass=regular-widthClass=regular" constant="276"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="t2u-yw-Qlf" firstAttribute="centerY" secondItem="ulf-J9-3eX" secondAttribute="centerY" id="hWX-x1-4vf"/>
                             <constraint firstAttribute="trailing" secondItem="t2u-yw-Qlf" secondAttribute="trailing" id="zLo-3l-h7J"/>
@@ -291,12 +287,7 @@
                     <navigationItem key="navigationItem" title="Apps List" id="hd9-ck-chG"/>
                     <connections>
                         <outlet property="collectionView" destination="UaB-Jf-rvD" id="aBF-03-clY"/>
-                        <segue destination="8rO-Xx-9M8" kind="popoverPresentation" identifier="seeDetail" popoverAnchorView="UaB-Jf-rvD" id="Cas-TZ-2pi">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                            <popoverPassthroughViews>
-                                <collectionView reference="UaB-Jf-rvD"/>
-                            </popoverPassthroughViews>
-                        </segue>
+                        <segue destination="8rO-Xx-9M8" kind="presentation" identifier="seeDetail" modalPresentationStyle="formSheet" modalTransitionStyle="crossDissolve" id="Cas-TZ-2pi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wg-Vs-DQ2" sceneMemberID="firstResponder"/>
@@ -319,7 +310,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPI-Rb-Z6h">
-                                <rect key="frame" x="16" y="56" width="343" height="275"/>
+                                <rect key="frame" x="16" y="196" width="343" height="275"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-rY-iQ0" userLabel="Name">
                                         <rect key="frame" x="5" y="8" width="330" height="30"/>
@@ -370,6 +361,16 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo3-qm-nR1">
+                                        <rect key="frame" x="266" y="16" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goBack:" destination="8rO-Xx-9M8" eventType="touchUpOutside" id="fR8-LM-f57"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.78823529411764703" blue="0.66666666666666663" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -403,20 +404,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92540913820266724" green="0.92554211616516113" blue="0.92537993192672729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="UPI-Rb-Z6h" secondAttribute="trailing" id="9DT-0E-rLU"/>
+                            <constraint firstItem="UPI-Rb-Z6h" firstAttribute="centerY" secondItem="sDT-4C-OBF" secondAttribute="centerY" id="4Du-Tx-sXE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UPI-Rb-Z6h" secondAttribute="trailing" id="9DT-0E-rLU">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="UPI-Rb-Z6h" firstAttribute="trailing" secondItem="sDT-4C-OBF" secondAttribute="trailingMargin" id="9OW-pD-JRw"/>
                             <constraint firstItem="UPI-Rb-Z6h" firstAttribute="leading" secondItem="sDT-4C-OBF" secondAttribute="leadingMargin" id="Bfo-Cv-WGM"/>
                             <constraint firstItem="GKM-tO-SxL" firstAttribute="leading" secondItem="sDT-4C-OBF" secondAttribute="leading" id="Dmv-Xx-OKP"/>
                             <constraint firstItem="nhi-6T-KON" firstAttribute="top" secondItem="GKM-tO-SxL" secondAttribute="bottom" id="Hr9-dL-awK"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="UPI-Rb-Z6h" secondAttribute="leading" id="Mqo-RP-U61"/>
-                            <constraint firstItem="GKM-tO-SxL" firstAttribute="top" secondItem="Aby-jq-2DJ" secondAttribute="bottom" constant="-20" id="RIM-bU-GTG"/>
-                            <constraint firstItem="GKM-tO-SxL" firstAttribute="top" secondItem="sDT-4C-OBF" secondAttribute="top" id="RKJ-M9-oOX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UPI-Rb-Z6h" secondAttribute="leading" id="Mqo-RP-U61">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="GKM-tO-SxL" secondAttribute="trailing" id="TfX-3z-m2L"/>
-                            <constraint firstItem="UPI-Rb-Z6h" firstAttribute="top" secondItem="Aby-jq-2DJ" secondAttribute="bottom" constant="36" id="ama-bq-lHX"/>
                             <constraint firstItem="GKM-tO-SxL" firstAttribute="centerY" secondItem="sDT-4C-OBF" secondAttribute="centerY" id="c5a-Wl-qBH"/>
+                            <constraint firstItem="UPI-Rb-Z6h" firstAttribute="centerX" secondItem="sDT-4C-OBF" secondAttribute="centerX" id="dTh-Sw-5aw"/>
                             <constraint firstItem="GKM-tO-SxL" firstAttribute="centerX" secondItem="sDT-4C-OBF" secondAttribute="centerX" id="tH0-KQ-Msp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="S9t-n8-Jw8"/>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="370"/>
                     <connections>
                         <outlet property="categoryLabel" destination="Csa-2L-Mrf" id="sT2-iH-f1n"/>

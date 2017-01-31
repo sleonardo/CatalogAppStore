@@ -12,7 +12,7 @@ import SDWebImage
 //import Alamofire_Gloss
 //import Gloss
 
-class HomeViewController: BaseController, UICollectionViewDataSource, UICollectionViewDelegate {
+class HomeViewController: BaseController, UICollectionViewDataSource, UICollectionViewDelegate, ViewControllerProtocol {
 
     //MARK: Outlet
     // CollectionView to display our items in grid and list view
@@ -144,7 +144,13 @@ class HomeViewController: BaseController, UICollectionViewDataSource, UICollecti
             self.appModel = self.appCollectionResponse[currentIndex]
         }
     }
-
+    
+    //MARK: Protocol
+    func dismissViewController() {
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: String(describing: DetailViewController())){
+            self.present(viewController, animated: true, completion: nil)
+        }
+    }
 }
 
 

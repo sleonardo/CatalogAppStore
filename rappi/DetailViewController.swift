@@ -10,6 +10,9 @@ import UIKit
 import Foundation
 import SDWebImage
 
+protocol ViewControllerProtocol {
+    func dismissViewController()
+}
 class DetailViewController: BaseController {
 
     @IBOutlet var nameLabel: UILabel!
@@ -20,7 +23,8 @@ class DetailViewController: BaseController {
     
     var itemDetail = [AppModel]()
     var currentIndexDetail = 0
-
+    var delegate:ViewControllerProtocol!
+    
     override func setup() {
         let itemToDisplay = itemDetail[currentIndexDetail]
         nameLabel.text = itemToDisplay.name
@@ -32,5 +36,11 @@ class DetailViewController: BaseController {
         let url = URL(string: urlString!)
         priceLabel.text = amount as String
         imageDetailView.sd_setImage(with: url)
+    }
+    
+    @IBAction func goBack(_ sender: AnyObject) {
+        self.dismiss(animated: true) {
+            self.delegate!.dismissViewController()
+        }
     }
 }
