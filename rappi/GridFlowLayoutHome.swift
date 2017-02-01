@@ -28,7 +28,7 @@ class GridFlowLayoutHome: UICollectionViewFlowLayout {
      */
     func setupLayout() {
         minimumInteritemSpacing = 1
-        minimumLineSpacing = 1
+        minimumLineSpacing = 15
         scrollDirection = .vertical
         let device = UIDevice.current.localizedModel
         if device.contains("iPhone") {

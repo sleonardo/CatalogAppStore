@@ -34,8 +34,8 @@ class ListFlowLayout: UICollectionViewFlowLayout {
      Sets up the layout for the collectionView. 0 distance between each cell, and vertical layout
      */
     func setupLayout() {
-        minimumInteritemSpacing = 1
-        minimumLineSpacing = 1
+        minimumInteritemSpacing = 3
+        minimumLineSpacing = 3
         scrollDirection = .vertical
         let device = UIDevice.current.localizedModel
         if viewController.contains("HomeViewController") {

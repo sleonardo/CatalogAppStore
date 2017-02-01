@@ -38,9 +38,10 @@ class DetailViewController: BaseController {
         imageDetailView.sd_setImage(with: url)
     }
     
-    @IBAction func goBack(_ sender: AnyObject) {
+    @IBAction func goBack(_ sender: UIButton) {
         self.dismiss(animated: true) {
-            self.delegate!.dismissViewController()
+//            self.delegate!.dismissViewController()
         }
     }
+    
 }

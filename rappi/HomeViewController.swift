@@ -35,7 +35,11 @@ class HomeViewController: BaseController, UICollectionViewDataSource, UICollecti
     override func setup() {
         //callAppRequest()
         self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationItem.title = appCollectionResponse[0].categoryModel.category
+        if (appCollectionResponse.count>0) {
+            self.navigationItem.title = appCollectionResponse[0].categoryModel.category
+        }else{
+            callAppRequest()
+        }
         setupInitialLayout()
         self.collectionView.reloadData()
     }
@@ -77,14 +81,25 @@ class HomeViewController: BaseController, UICollectionViewDataSource, UICollecti
 
     //MARK: Layout
     func setupInitialLayout() {
-        isGridFlowLayoutUsed = true
-        collectionView.collectionViewLayout = gridFlowLayout
+        let device = UIDevice.current.localizedModel
+        if device.contains("iPad") {
+            isGridFlowLayoutUsed = true
+            collectionView.collectionViewLayout = gridFlowLayout
+        } else {
+            isGridFlowLayoutUsed = false
+            collectionView.collectionViewLayout = listFlowLayout
+        }
     }
     
     @IBAction func listButtonPressed() {
         // change to list layout
-        isGridFlowLayoutUsed = false
-        
+        let device = UIDevice.current.localizedModel
+        if device.contains("iPad") {
+            isGridFlowLayoutUsed = true
+        } else {
+            isGridFlowLayoutUsed = false
+        }
+
         UIView.animate(withDuration: 0.2, animations: { () -> Void in
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.collectionView.setCollectionViewLayout(self.listFlowLayout, animated: true)
@@ -93,8 +108,12 @@ class HomeViewController: BaseController, UICollectionViewDataSource, UICollecti
     
     @IBAction func gridButtonPressed() {
         // change to grid layout
-        isGridFlowLayoutUsed = true
-        
+        let device = UIDevice.current.localizedModel
+        if device.contains("iPad") {
+            isGridFlowLayoutUsed = true
+        } else {
+            isGridFlowLayoutUsed = false
+        }
         UIView.animate(withDuration: 0.2, animations: { () -> Void in
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.collectionView.setCollectionViewLayout(self.gridFlowLayout, animated: true)
