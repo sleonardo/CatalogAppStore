@@ -28,8 +28,8 @@ class GridFlowLayout: UICollectionViewFlowLayout {
      Sets up the layout for the collectionView. 0 distance between each cell, and vertical layout
      */
     func setupLayout() {
-        minimumInteritemSpacing = 3
-        minimumLineSpacing = 3
+        minimumInteritemSpacing = 1
+        minimumLineSpacing = 25
         scrollDirection = .vertical
         let device = UIDevice.current.localizedModel
         if viewController.contains("HomeViewController") {
